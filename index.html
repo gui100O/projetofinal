@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confeitaria da Dona Laura oferece os melhores doces da cidade, feitos com carinho e qualidade.">
+    <meta name="keywords" content="confeitaria, doces, bolos, cupcakes, bombons, tortas">
+    <meta name="author" content="Confeitaria da Dona Laura">
+    <title>Confeitaria da Dona Laura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/icon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Confeitaria da Dona Laura</h1>
+                <p>Os doces mais queridos da vizinhança</p>
+                <a href="#produtos" class="btn">Peça agora!</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="produtos" class="mais-vendidos">
+            <h2>Mais Vendidos!</h2>
+            <div class="produtos">
+                <div class="produto" onclick="abrirModal('Bombom Gourmet', 'bombom.jpg', 'Deliciosos bombons recheados com amor.', 'R$ 12,00', 'Ingredientes: Chocolate, Coco, Açúcar, Leite condensado, Manteiga.')">
+                    <img src="imgs/bombom.jpg" alt="Bombom gourmet recheado de chocolate e coco" loading="lazy">
+                    <h3>Bombom Gourmet</h3>
+                    <p>Deliciosos bombons recheados com amor.</p>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Bolos Recheados', 'bolorecheado.jpg', 'Bolos macios com recheios incríveis.', 'R$ 45,00', 'Ingredientes: Farinha de trigo, Açúcar, Ovos, Creme de leite, Recheio de chocolate ou frutas, Fermento.')">
+                    <img src="imgs/bolorecheado.jpg" alt="Bolos recheados com massa fofinha e coberturas deliciosas" loading="lazy">
+                    <h3>Bolos Recheados</h3>
+                    <p>Bolos macios com recheios incríveis.</p>
+                    <span class="preco">R$ 45,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Doces Caseiros', 'docecaseiro.jpg', 'Tradição e sabor em cada mordida.', 'R$ 15,00', 'Ingredientes: Açúcar, Chocolate, Creme de leite, Nozes ou castanhas, Baunilha.')">
+                    <img src="imgs/docecaseiro.jpg" alt="Doces caseiros feitos com carinho e tradição" loading="lazy">
+                    <h3>Doces Caseiros</h3>
+                    <p>Tradição e sabor em cada mordida.</p>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Cupcakes', 'cupcake.jpg', 'Uma explosão de cores e sabores.', 'R$ 7,00', 'Ingredientes: Farinha de trigo, Açúcar, Ovos, Glacê, Corante alimentício, Leite.')">
+                    <img src="imgs/cupcake.jpg" alt="Cupcakes coloridos com coberturas irresistíveis" loading="lazy">
+                    <h3>Cupcakes</h3>
+                    <p>Uma explosão de cores e sabores.</p>
+                    <span class="preco">R$ 7,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Bolos Decorados', 'bolodecorado.jpeg', 'Arte e doçura em decorações deliciosas.', 'R$ 85,00', 'Ingredientes: Farinha de trigo, Açúcar, Ovos, Cobertura de pasta americana, Recheios variados (chocolate, frutas, creme).')">
+                    <img src="imgs/bolodecorado.jpeg" alt="Bolos decorados com detalhes personalizados" loading="lazy">
+                    <h3>Bolos Decorados</h3>
+                    <p>Arte e doçura em decorações deliciosas.</p>
+                    <span class="preco">R$ 85,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Cookies de Chocolate', 'cookies.jpg', 'Perfeitos para acompanhar um café.', 'R$ 8,00', 'Ingredientes: Farinha de trigo, Açúcar, Chocolate, Manteiga, Ovos, Fermento.')">
+                    <img src="imgs/cookies.jpg" alt="Cookies crocantes com pedaços de chocolate" loading="lazy">
+                    <h3>Cookies de Chocolate</h3>
+                    <p>Perfeitos para acompanhar um café.</p>
+                    <span class="preco">R$ 8,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Torta de Limão', 'lemonpie.jpg', 'Uma combinação perfeita de azedo e doce.', 'R$ 25,00', 'Ingredientes: Biscoito, Manteiga, Limão (suco e raspas), Creme de leite, Açúcar, Gelatina.')">
+                    <img src="imgs/lemonpie.jpg" alt="Torta de limão com sabor equilibrado de doce e azedo" loading="lazy">
+                    <h3>Torta de Limão</h3>
+                    <p>Uma combinação perfeita de azedo e doce.</p>
+                    <span class="preco">R$ 25,00</span>
+                </div>
+                <div class="produto" onclick="abrirModal('Torta de Morango', 'tortamorango.jpg', 'Sabor suave e cremoso com morangos frescos.', 'R$ 30,00', 'Ingredientes: Morangos frescos, Creme de leite, Açúcar, Biscoito ou massa base.')">
+                    <img src="imgs/tortamorango.jpg" alt="Torta de morango com creme suave e morangos frescos" loading="lazy">
+                    <h3>Torta de Morango</h3>
+                    <p>Sabor suave e cremoso com morangos frescos.</p>
+                    <span class="preco">R$ 30,00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-dona-laura">
+            <h2>Quem começou a espalhar as doçuras?</h2>
+            <div class="sobre">
+                <img src="imgs/velha.jpeg" alt="Dona Laura, criadora da confeitaria" loading="lazy">
+                <p>
+                    Apaixonada por adoçar vidas, Dona Laura começou sua jornada inspirada nas receitas simples e cheias de amor de sua avó. As viagens com o marido trouxeram técnicas e sabores únicos, enriquecendo ainda mais sua arte. O sorriso das crianças ao experimentar seus doces transformou sua paixão em um negócio, onde cada receita conta uma história e leva alegria a quem a saboreia.
+                </p>
+            </div>
+        </section>
+
+        <section id="galeria-eventos" class="galeria">
+            <h2>Galeria de Eventos</h2>
+            <div class="galeria-container">
+                <div class="galeria-item">
+                    <img src="imgs/niver.jpg" alt="Mesa decorada com doces para uma festa de aniversário" loading="lazy">
+                    <p>Festa de aniversário com uma mesa repleta de doces decorados.</p>
+                </div>
+                <div class="galeria-item">
+                    <img src="imgs/casamento.jpg" alt="Mesa de casamento com bolo decorado e cupcakes" loading="lazy">
+                    <p>Decoração especial para um casamento inesquecível.</p>
+                </div>
+                <div class="galeria-item">
+                    <img src="imgs/feiraconf.jpg" alt="Stand da confeitaria em uma feira de artesanato" loading="lazy">
+                    <p>Participação em feira de artesanato com exposição de doces.</p>
+                </div>
+                <div class="galeria-item">
+                    <img src="imgs/tematico.jpg" alt="Decoração encantadora com doces temáticos" loading="lazy">
+                    <p>Decoração encantadora com doces temáticos, featuring bolo decorado, cupcakes delicados, brigadeiros, trufas e balas coloridas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testemunhos">
+            <h2>O que nossos clientes dizem?</h2>
+            <div class="testemunhos-container">
+                <blockquote>
+                    <p>"Os melhores doces da cidade! Super recomendo."</p>
+                    <footer>- Ana Clara</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"A atenção aos detalhes e o sabor são impecáveis."</p>
+                    <footer>- João Pedro</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Confeitaria da Dona Laura tem os melhores doces que eu já provei!"</p>
+                    <footer>- Gilberto Gomes</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"A Torta de Limão é simplesmente irresistível! Sempre volto para mais!"</p>
+                    <footer>- Mariana Souza</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Comprei um bolo decorado para o aniversário da minha filha e todos ficaram encantados!"</p>
+                    <footer>- Ricardo Martins</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"As sobremesas da Dona Laura são uma explosão de sabor. Não vejo a hora de voltar!"</p>
+                    <footer>- Fernanda Oliveira</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Não tem como resistir aos cupcakes. São deliciosos e sempre fresquinhos!"</p>
+                    <footer>- Thiago Lima</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"O atendimento foi excelente, e os doces são maravilhosos! Sempre que posso, volto para comprar mais."</p>
+                    <footer>- Juliana Silva</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Cada mordida é uma viagem de sabores, sempre fico encantado com os bolos decorados!"</p>
+                    <footer>- Marcos Almeida</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Sempre que temos eventos aqui em casa, os doces da Dona Laura são presença garantida!"</p>
+                    <footer>- Laura Costa</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato ou faça seu pedido!</p>
+            <form id="form-contato">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <textarea id="mensagem" placeholder="Mensagem ou pedido" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Confeitaria da Dona Laura | <a href="#contato">Contato</a></p>
+        <p>Siga-nos: 
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">Instagram</a> | 
+            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">TikTok</a> | 
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+        </p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-descricao"></p>
+            <p id="modal-ingredientes"></p>
+            <span id="modal-preco"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
